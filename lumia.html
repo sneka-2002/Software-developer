@@ -1,0 +1,1290 @@
+<!Doctype html>
+<html>
+<head>
+<title>
+lumia
+</title>
+
+<style>
+*
+{
+box-sizing:border-box;
+padding:0px;
+margin:0px;
+}
+ul{
+list-style-type:none;
+padding:0px;
+margin:0px 0px 20px 350px;
+overflow:hidden;
+}
+li
+{
+float:left;
+}
+li a
+{
+margin-left:20px;
+
+display: block;
+text-align: center;
+padding:13px  16px;
+text-decoration: none;
+color:#8a8169;
+}
+.all{
+color:white;
+border-radius:5px;
+background-color:#3498db;
+}
+li a:hover
+{
+border-radius:5px;
+color:white;
+background-color:#3498db;
+}
+.sticky
+{
+position:sticky;
+top:0;
+z-index:997;
+box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+
+}
+.row:after
+{
+content:'';
+display:table;
+clear:both;
+}
+.container
+{                                                                                        
+width:80%;
+margin:auto;
+}
+.cum-col
+{
+float:left;
+}
+.main
+{
+
+width:100%;
+background-color:#fff;
+padding:20px 0px ;
+}
+
+.header-logo
+{
+width:20%;
+font-family:raleway, sans-serif;
+}
+.header-logo a
+{
+text-decoration:none;
+font-size:28px;
+color:black;
+}
+.header-menu a
+{
+font-family: "Poppins", sans-serif;
+text-decoration:none;
+padding:20px 30px 0px 0px;
+color:#4f5a62;
+font-size:18px;
+}
+.header-menu a:hover
+{
+color:#3498db;
+}
+img
+{
+width:20px;
+height:20px;
+margin:0px 3px;
+}
+.header-image
+{
+padding:0px 0px 15px 20px;
+}
+.header-image a:hover
+{
+color:#3498db;
+}
+.hero
+{
+background-image:url(images/hero-bg.jpg);
+background-size:cover;
+background-position:center;
+}
+.hero h1
+{
+font-family: "Raleway", sans-serif;
+font-size:48px;
+color:white;
+text-align:center;
+padding-top:100px;
+}
+.hero h2
+{
+font-size:24px;
+color:rgba(255, 255, 255, 0.8);
+text-align:center;
+padding-top:10px;
+}
+.position
+{
+
+background-color:rgba(56, 64, 70, 0.7);
+}
+input[type="submit"]
+{
+width:200px;
+height:45px;
+margin:30px 0px 130px 550px;
+color:white;
+background-color:#3498db;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+.hero span{
+border-bottom:4px solid #3498db;
+}
+
+.what-we-do span{
+
+border-bottom:1px solid #9e9e9e;
+}
+.about-us
+{
+width:50%;
+padding-left:25px;
+}
+.about-us h6
+{
+font-family: "Raleway", sans-serif;
+font-size:32px;
+font-weight:600;
+padding-bottom:10px;
+color:#495057;
+}
+.about img
+{
+width:530px;
+height:400px;
+}
+.about-us p
+{
+font-family: "Open Sans", sans-serif;
+color: #444444;
+text-align:justify;
+line-height: 1.5;
+
+}
+.about-us img
+{
+margin-right:10px;
+float: left;
+width:25px;
+height:23px;
+}
+.about-tick
+
+{
+margin:20px 10px 10px 0px;
+}
+.cum-colm
+{
+float:left;
+width:50%;
+padding-right:10px;
+}
+.text img
+{
+margin:20px 150px 20px 0px;
+width:40px;
+height:40px;
+}
+.about-us h5{
+font-size:23px;
+padding-bottom:10px;
+}
+.what-we-do p
+{
+text-align:center;
+font-family: "Open Sans", sans-serif;
+color: #444444;
+margin:20px 0px;
+padding:10px;
+line-height: 1.5;
+}
+.box
+{
+float:left;
+width:31%;
+margin-right:37px;
+}
+.box:hover
+{
+box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.box h5:hover
+{
+color:blue;
+}
+.boxs h5:hover
+{
+color:blue;
+}
+.boxs:hover
+{
+
+box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.boxs
+{
+float:right;
+width:31%;
+}
+.what-we-do img
+{
+border-radius:30px;
+background-color:#eaf4fb;
+height:60px;
+width:60px;
+padding:15px;
+margin:15px 0px 10px 135px;
+}
+.what-we-do h5
+{
+margin:10px 0px;
+text-align:center;
+font-size:22px;
+color: #384046;
+font-family: "Raleway", sans-serif;
+}
+
+.what-we-do
+{
+margin:30px 0px 50px 0px;
+}
+.what-we-do h4
+{
+text-align:center;
+padding:20px;
+color:black;
+font-size:32px;
+font-family:raleway, sans-serif;
+position:relative;
+ z-index: -1;
+}
+.what-we-do h4::before
+{
+
+content:"";
+position:absolute;
+display:block;
+bottom:1px;
+width:120px;
+height:1px;
+background-color:#ddd;
+left:43.5%;
+
+}
+.what-we-do h4::after
+{
+
+content:"";
+position:absolute;
+display:block;
+bottom:0px;
+width:45px;
+height:3px;
+background-color:#3498db;
+left:47%;
+
+}
+.services
+{
+background-color:#f7fbfe;
+padding:20px;
+}
+.services h5
+{
+text-align:center;
+padding:20px;
+color:black;
+font-size:32px;
+font-family:raleway, sans-serif;
+position:relative;
+z-index:1;
+}
+.Testimonials
+{
+background-color:#f7fbfe;
+padding:50px 0px;
+}
+
+.Testimonials h5
+{
+text-align:center;
+padding:20px;
+color:black;
+font-size:32px;
+font-family:raleway, sans-serif;
+position:relative;
+z-index:1;
+}
+.Testimonials h5::before
+{
+content:"";
+position:absolute;
+display:block;
+bottom:1px;
+width:100px;
+height:1px;
+background-color:#ddd;
+left:45.5%;
+}
+.Testimonials h5::after
+{
+content:"";
+position:absolute;
+display:block;
+bottom:0px;
+width:45px;
+height:3px;
+background-color:#3498db;
+left:48%;
+}
+.Testimonials p{
+text-align:center;
+font-family: "Open Sans", sans-serif;
+color: #444444;
+padding:20px;
+}
+.contact
+{
+background-color:#f7fbfe;
+padding:50px 0px;
+}
+
+.contact h5
+{
+text-align:center;
+padding:20px;
+color:black;
+font-size:32px;
+font-family:raleway, sans-serif;
+position:relative;
+z-index:1;
+}
+.contact h5::before
+{
+content:"";
+position:absolute;
+display:block;
+bottom:1px;
+width:100px;
+height:1px;
+background-color:#ddd;
+left:45.5%;
+}
+.contact h5::after
+{
+content:"";
+position:absolute;
+display:block;
+bottom:0px;
+width:45px;
+height:3px;
+background-color:#3498db;
+left:48%;
+}
+.contact p{
+text-align:center;
+font-family: "Open Sans", sans-serif;
+color: #444444;
+margin:20px 0px 70px 0px ;
+}
+.contact-call
+{
+width:80%;
+padding:40px 20px;
+margin:auto;
+background-color:white;
+border-radius:5px;
+}
+.contact-call p
+{
+text-align:justify;
+font-size:15px;
+margin:0px;
+padding:5px 10px 0px 10px;
+}
+.contact img
+{
+border-radius:30px;
+background-color:#eaf4fb;
+height:50px;
+width:50px;
+padding:10px;
+margin-left:5px;
+}
+.contact h4
+{
+font-size:20px;
+padding:5px 130px 0px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services h5::before
+{
+content:"";
+position:absolute;
+display:block;
+bottom:1px;
+width:100px;
+height:1px;
+background-color:#ddd;
+left:45.5%;
+}
+.services h5::after
+{
+content:"";
+position:absolute;
+display:block;
+bottom:0px;
+width:45px;
+height:3px;
+background-color:#3498db;
+left:48%;
+}
+.services p{
+text-align:center;
+font-family: "Open Sans", sans-serif;
+color: #444444;
+padding:10px;
+}
+
+.quatation-img
+{
+width:20px;
+height:20px;
+margin: 0px 10px;
+}
+.Testimonials-img
+{
+width:90px;
+height:90px;
+margin:10px 0px 10px 100px;
+border-radius:50%;
+}
+.Testimonials-box
+{
+background-color:white;
+width:30%;
+padding:25px;
+margin-left:35px;
+box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.Testimonials-boxs
+{
+background-color:white;
+box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+width:30%;
+padding:25px;
+float:right;
+}
+.Testimonials-box p
+{
+font-family: "Open Sans", sans-serif;
+color: #444444;
+line-height: 1.5;
+padding:10px;
+}
+.Testimonials-boxs p
+{
+font-family: "Open Sans", sans-serif;
+color: #444444;
+line-height: 1.8;
+padding:10px;
+}
+.Testimonials h4
+{
+text-align:center;
+font-size:22px;
+}
+.Testimonials h6
+{
+color:#b8b8b8;
+margin:5px;
+text-align:center;
+font-size:17px;
+}
+
+.services img
+{
+width:40px;
+height:30px;
+}
+.border{
+width:500px;
+background-color:white;
+padding:35px 20px;
+margin:20px 20px 10px 0px;
+border-radius:5px;
+}
+.borders{
+width:500px;
+background-color:white;
+padding:35px 20px;
+margin:20px 0px 10px 20px;
+border-radius:5px;
+}
+.borders:hover
+{
+box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.border:hover
+{
+box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.services h6
+{
+font-size:22px;
+padding-left:70px;
+}
+.border p
+{
+font-size:14px;
+padding:5px 10px 0px 70px;
+text-align:justify;
+}
+.borders p
+{
+font-size:14px;
+padding:5px 10px 0px 70px;
+text-align:justify;
+}
+
+.portfolio
+{
+margin:30px 0px 50px 0px;
+}
+.portfolio h4
+{
+text-align:center;
+padding:20px;
+color:black;
+font-size:32px;
+font-family:raleway, sans-serif;
+position:relative;
+ z-index: -1;
+}
+.portfolio h4::before
+{
+
+content:"";
+position:absolute;
+display:block;
+bottom:1px;
+width:120px;
+height:1px;
+background-color:#ddd;
+left:43.5%;
+
+}
+.portfolio h4::after
+{
+
+content:"";
+position:absolute;
+display:block;
+bottom:0px;
+width:45px;
+height:3px;
+background-color:#3498db;
+left:47%;
+
+}
+.portfolio p
+{
+text-align:center;
+font-family: "Open Sans", sans-serif;
+color: #444444;
+margin:20px 0px;
+padding:10px;
+line-height: 1.5;
+}
+.team
+{
+margin:30px 0px 60px 0px;
+}
+.team h4
+{
+text-align:center;
+padding:20px;
+color:black;
+font-size:32px;
+font-family:raleway, sans-serif;
+position:relative;
+ z-index: -1;
+}
+.team h4::before
+{
+
+content:"";
+position:absolute;
+display:block;
+bottom:1px;
+width:120px;
+height:1px;
+background-color:#ddd;
+left:43.5%;
+
+}
+.team h4::after
+{
+
+content:"";
+position:absolute;
+display:block;
+bottom:0px;
+width:45px;
+height:3px;
+background-color:#3498db;
+left:47%;
+
+}
+.team p
+{
+text-align:center;
+font-family: "Open Sans", sans-serif;
+color: #444444;
+margin:20px 0px;
+padding:10px;
+line-height: 1.5;
+}
+.team-img
+{
+width:180px;
+height:180px;
+margin:10px 0px 10px 50px;
+border-radius:50%;
+}
+.team-box
+{
+background-color:white;
+width:31.5%;
+padding:25px;
+margin-left:20px;
+box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.team-boxs
+{
+background-color:white;
+box-shadow:0px 2px 15px rgba(0, 0, 0, 0.1);
+width:31.5%;
+padding:25px;
+float:right;
+}
+.team-box p
+{
+font-family: "Open Sans", sans-serif;
+color: #444444;
+line-height: 1.5;
+padding:5px;
+margin:0px;
+}
+.team-boxs p
+{
+font-family: "Open Sans", sans-serif;
+color: #444444;
+line-height: 1.5;
+padding:5px;
+margin:0px;
+}
+.team h5
+{
+padding-top:10px;
+text-align:center;
+font-size:22px;
+}
+.team h6
+{
+color:#b8b8b8;
+margin:5px;
+text-align:center;
+font-size:12px;
+}
+.team-logo
+{
+margin-top:10px;
+padding-left:70px;
+}
+
+
+
+
+
+
+
+.portfolio-box
+{
+box-shadow:0px 2px 5px rgba(0, 0, 0, 0.1);
+float:left;
+width:32%;
+margin:5px 21px 20px 0px;
+}
+.portfolio-boxs
+{
+box-shadow:0px 2px 5px rgba(0, 0, 0, 0.1);
+width:32%;
+float:right;
+}
+.portfolio img
+{
+height: 250px;
+overflow:hidden;
+align:center;
+width:340px;
+ background: #000;
+
+}
+.portfolio h5
+{
+padding:10px;
+text-align:center;
+font-size:20px;
+}
+.portfolio h6
+{
+color:#b8b8b8;
+padding:10px;
+text-align:center;
+font-size:15px;
+}
+
+.portfolio-boxs:hover
+{
+box-shadow:0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+.portfolio-box:hover
+{
+box-shadow:0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+</style>                      
+
+</head>
+<body>
+<div class="sticky">
+<div class="main">
+<div class="container">
+<div class="row">
+<div class="cum-col header-logo">
+<a href="lumia">LUMIA</a>
+</div>
+<div class="cum-col header-menu">
+<a href="lumia">Home</a>
+<a href="lumia">About</a>
+<a href="lumia">Services</a>
+<a href="lumia">Portfolio</a>
+<a href="lumia">Testimonials</a>
+<a href="lumia">Drop Down</a>
+<a href="lumia">Contact</a>
+</div>
+<div class="cum-col header-image">
+<a href="twitter"><img src="images/twitt.png"></a>
+<a href="twitter"><img src="images/facebook.png"></a>
+<a href="twitter"><img src="images/instagram.png"></a>
+<a href="twitter"><img src="images/linked.png"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="hero">
+<div class="position">
+<h1>
+Welcome to <span>Lumia</span>
+</h1>
+<h2>We are team of talented designers making websites with Bootstrap
+</h2>
+<input type="submit" value="GET STARTED">
+</div>
+</div>
+
+<div class="what-we-do">
+<div class="container">
+
+<h4>What We Do</h4>
+<p>Magnam dolores commodi suscipit consequatur ex aliquid</p>
+
+
+<div class="row">
+<div class="cum-col box">
+<img src="images/balls.png">
+<h5>Lorem Ipsum</h5>
+<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+</div>
+<div class="cum-col box">
+<img src="images/texts.png">
+<h5>Sed ut perspiciatis</h5>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+</div>
+<div class="cum-col boxs">
+<img src="images/meters.png">
+<h5>Magni Dolores</h5>
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="about">
+<div class="container">
+<div class="row">
+<div class="cum-col">
+<img src="images/about.jpg">
+</div>
+<div class="cum-col about-us">
+<h6>About Us</h6>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<p class="about-tick"><img src="images/doubletick.png">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<p class="about-tick"><img src="images/doubletick.png">Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+
+
+<div class="row">
+<div class="cum-colm text">
+<img src="images/texts.png">
+
+</div>
+<div class="cum-colm text">
+<img src="images/cubesss.png">
+</div>
+</div>
+
+
+<div class="row">
+<div class="cum-colm head">
+<h5>Corporis voluptates sit</h5>
+
+</div>
+<div class="cum-colm head">
+<h5>Ullamco laboris nisi</h5>
+</div>
+</div>
+
+<div class="row">
+<div class="cum-colm text">
+<div>
+<p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip<p>
+</div>
+
+</div>
+<div class="cum-colm text">
+<div>
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt<p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="services">
+<div class="container">
+
+<h5>Services</h5>
+<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+
+
+<div class="row">
+<div class="cum-col">
+<div class="border">
+<div class="row">
+<div class="cum-col">
+<img src="images/briefcase.png">
+</div>
+<div>
+<h6>Lorem Ipsum</h6>
+
+</div>
+</div>
+<div>
+<p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+</div>
+</div>
+</div>
+
+
+<div class="cum-col">
+<div class="borders">
+<div class="row">
+<div class="cum-col">
+<img src="images/menu.png">
+</div>
+<div>
+<h6>Dolor Sitema</h6>
+
+</div>
+</div>
+<div>
+<p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="cum-col">
+<div class="border">
+<div class="row">
+<div class="cum-col">
+<img src="images/bar.png">
+</div>
+<div>
+<h6>Sed ut perspiciatis</h6>
+
+</div>
+</div>
+<div>
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+</div>
+</div>
+</div>
+
+
+<div class="cum-col">
+<div class="borders">
+<div class="row">
+<div class="cum-col">
+<img src="images/briefcase.png">
+</div>
+<div>
+<h6>Nemo Enim</h6>
+
+</div>
+</div>
+<div>
+<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+<div class="cum-col">
+<div class="border">
+<div class="row">
+<div class="cum-col">
+<img src="images/sun.png">
+</div>
+<div>
+<h6>Magni Dolore</h6>
+
+</div>
+</div>
+<div>
+<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+</div>
+</div>
+</div>
+
+
+<div class="cum-col">
+<div class="borders">
+<div class="row">
+<div class="cum-col">
+<img src="images/cal.png">
+</div>
+<div>
+<h6>Eiusmod Tempor</h6>
+
+</div>
+</div>
+<div>
+<p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+
+<div class="portfolio">
+<div class="container">
+
+<h4>Portfolio</h4>
+<p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
+
+<div>
+<ul>
+<li><a href="all" class="all">ALL</a></li>
+<li><a href="all">APP</a></li>
+<li><a href="all">CARD</a></li>
+<li><a href="all">WEB</a></li>
+</ul>
+</div>
+
+<div class="row">
+
+<div class="cum-col portfolio-box">
+<img src="images/portfolio-1.jpg">
+<div class="app">
+<h5>App 1</h5>
+<h6>APP</h6>
+</div>
+</div>
+<div class="cum-col portfolio-box">
+<img src="images/portfolio-2.jpg">
+<h5>Web 3</h5>
+<h6>WEB</h6>
+</div>
+<div class="cum-col portfolio-boxs">
+<img src="images/portfolio-3.jpg">
+<h5>App 2</h5>
+<h6>APP</h6>
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="cum-col portfolio-box">
+<img src="images/portfolio-4.jpg">
+<div class="app">
+<h5>Card 2</h5>
+<h6>CARD</h6>
+</div>
+</div>
+<div class="cum-col portfolio-box">
+<img src="images/portfolio-5.jpg">
+<h5>Web 2</h5>
+<h6>WEB</h6>
+</div>
+<div class="cum-col portfolio-boxs">
+<img src="images/portfolio-6.jpg">
+<h5>App 3</h5>
+<h6>APP</h6>
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="cum-col portfolio-box">
+<img src="images/portfolio-7.jpg">
+<div class="app">
+<h5>Card 1</h5>
+<h6>CARD</h6>
+</div>
+</div>
+<div class="cum-col portfolio-box">
+<img src="images/portfolio-8.jpg">
+<h5>Card 3</h5>
+<h6>CARD</h6>
+</div>
+<div class="cum-col portfolio-boxs">
+<img src="images/portfolio-9.jpg">
+<h5>Web 3</h5>
+<h6>WEB</h6>
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+<div class="Testimonials">
+<div class="container">
+
+<h5>Testimonials</h5>
+<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+<div class="row">
+
+<div class="cum-col Testimonials-box">
+<p>
+ <img class="quatation-img" src="images/qf.png">Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.<img class="quatation-img" src="images/qf.png">
+</p>
+<img class="Testimonials-img" src="images/testimonials-5.jpg">
+<h4>John Larson</h4>
+<h6>Entrepreneur</h6>
+</div>
+<div class="cum-col Testimonials-box">
+<p>
+ <img class="quatation-img" src="images/qf.png">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.<img class="quatation-img" src="images/qf.png">
+</p>
+<img class="Testimonials-img" src="images/testimonials-4.jpg">
+<h4>JMatt Brandon</h4>
+<h6>Freelancer</h6>
+</div>
+<div class="cum-col Testimonials-boxs">
+<p>
+ <img class="quatation-img" src="images/qf.png">Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.<img class="quatation-img" src="images/qf.png">
+</p>
+<img class="Testimonials-img" src="images/testimonials-2.jpg">
+<h4>Sara Wilsson</h4>
+<h6>Designer</h6>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div class="team">
+<div class="container">
+
+<h4>Team</h4>
+<p>Sit sint consectetur velit quisquam cupiditate impedit suscipit</p>
+<div class="row">
+
+<div class="cum-col team-box">
+
+<img class="team-img" src="images/team-1.jpg">
+<h5>Walter White</h5>
+<h6>Chief Executive Officer</h6>
+<p><i>Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut</i></p>
+
+<div class="team-logo">
+<a href="twitter"><img src="images/twitt.png"></a>
+<a href="twitter"><img src="images/facebook.png"></a>
+<a href="twitter"><img src="images/instagram.png"></a>
+<a href="twitter"><img src="images/linked.png"></a>
+</div>
+
+
+</div>
+<div class="cum-col team-box">
+<img class="team-img" src="images/team-2.jpg">
+<h5>
+Sarah Jhinson</h5>
+<h6>Product Manager</h6>
+<p><i>Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus</i></p>
+
+<div class="team-logo">
+<a href="twitter"><img src="images/twitt.png"></a>
+<a href="twitter"><img src="images/facebook.png"></a>
+<a href="twitter"><img src="images/instagram.png"></a>
+<a href="twitter"><img src="images/linked.png"></a>
+</div>
+
+
+</div>
+<div class="cum-col team-boxs">
+<img class="team-img" src="images/team-3.jpg">
+<h5>William Anderson</h5>
+<h6>CTO</h6>
+<p><i>Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara</i></p>
+
+<div class="team-logo">
+<a href="twitter"><img src="images/twitt.png"></a>
+<a href="twitter"><img src="images/facebook.png"></a>
+<a href="twitter"><img src="images/instagram.png"></a>
+<a href="twitter"><img src="images/linked.png"></a>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="contact">
+<div class="container">
+
+<h5>Contact</h5>
+<p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
+
+<div class="contact-call">
+<div class="row">
+<div class="cum-col">
+<img src="images/location.png">
+</div>
+<div class="cum-col">
+<h4>Loaction:</h4>
+<p>A108 Adam Street</p>
+<p>New York, NY 535022</p>
+</div>
+<div class="cum-col">
+<img src="images/email.png">
+</div>
+<div class="cum-col">
+<h4>Email:</h4>
+<p>info@example.com</p>
+<p>contact@example.com</p>
+</div>
+<div class="cum-col">
+<img src="images/phone.png">
+</div>
+<div class="cum-col">
+<h4>Call:</h4>
+<p>+1 5589 55488 51</p>
+<p>+1 5589 22475 14</p>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
